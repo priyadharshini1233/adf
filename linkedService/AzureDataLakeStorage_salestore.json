@@ -1,0 +1,12 @@
+{
+	"name": "AzureDataLakeStorage_salestore",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://datalakedemo142618.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDdCQUI2MkI0LTU5MzAtNEM3Qy1CREE4LThCMTQ5NkFEQUNCQ184MGU4OGU2Zi04NTVmLTQzYzEtODM1MC04ODRhNTAwZmM1NzUiDQp9"
+		}
+	}
+}
