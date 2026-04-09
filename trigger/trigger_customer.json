@@ -1,0 +1,25 @@
+{
+	"name": "trigger_customer",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline_customer_load",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/salestore/blobs/bronze/bronze_new/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/690a4c22-5fc9-4d6b-a4ae-f51dad89df7b/resourceGroups/adf_practice/providers/Microsoft.Storage/storageAccounts/datalakedemo142618",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
